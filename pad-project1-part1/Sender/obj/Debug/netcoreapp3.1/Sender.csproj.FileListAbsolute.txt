@@ -1,0 +1,4 @@
+C:\Users\aiordan\Desktop\PAD-projects\pad-project1-part1\Sender\bin\Debug\netcoreapp3.1\Utils.dll
+C:\Users\aiordan\Desktop\PAD-projects\pad-project1-part1\Sender\obj\Debug\netcoreapp3.1\Sender.csprojAssemblyReference.cache
+C:\Users\aiordan\Desktop\PAD-projects\pad-project1-part1\Sender\obj\Debug\netcoreapp3.1\Sender.AssemblyInfoInputs.cache
+C:\Users\aiordan\Desktop\PAD-projects\pad-project1-part1\Sender\obj\Debug\netcoreapp3.1\Sender.AssemblyInfo.cs
