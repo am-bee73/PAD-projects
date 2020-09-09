@@ -1,4 +1,5 @@
 ﻿using System;
+using Utils;
 
 namespace Broker
 {
@@ -7,6 +8,11 @@ namespace Broker
         static void Main(string[] args)
         {
             Console.WriteLine("Broker");
+
+            BrockerSocket socket = new BrockerSocket();
+            socket.Start(Settings.BROKER_IP, Settings.BROKER_PORT);
+
+            Console.ReadLine();
         }
     }
 }

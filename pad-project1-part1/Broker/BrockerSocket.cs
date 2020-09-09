@@ -80,11 +80,6 @@ namespace Broker
                     // Handle payload
                     PayloadHandler.Handle(payload, connectionInfo);
                 } 
-                else
-                {
-                    // Failed to obtain data from socket
-                    Logger.Log("Failed to obtain data from socket");
-                }
             }
             catch(Exception e)
             {
@@ -97,10 +92,23 @@ namespace Broker
                     // Start receiving new data
                     connectionInfo.Socket.BeginReceive(connectionInfo.Buffer, 0, connectionInfo.Buffer.Length, SocketFlags.None, this.ReceiveCallBack, connectionInfo);
                 }
-                catch(Exception e)
+                catch (SocketException e)
                 {
                     // Socket is disconnected
-                    Logger.Log("Can't accept: " + e.Message);
+                    Console.WriteLine($"{e.Message}");
+                    //Logger.Log("Can't accept: " + e.Message);
+
+                    // Remove socket from storage
+                    var address = connectionInfo.Socket.RemoteEndPoint.ToString();
+
+                    // Close connection
+                    connectionInfo.Socket.Close();
+                }
+                catch (Exception e)
+                {
+                    // Socket is disconnected
+                    Console.WriteLine($"{e.Message}");
+                    //Logger.Log("Can't accept: " + e.Message);
 
                     // Remove socket from storage
                     var address = connectionInfo.Socket.RemoteEndPoint.ToString();
