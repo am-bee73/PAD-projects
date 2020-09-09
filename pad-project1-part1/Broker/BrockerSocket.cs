@@ -78,7 +78,7 @@ namespace Broker
                     Array.Copy(connectionInfo.Buffer, payload,buffSize);
 
                     // Handle payload
-
+                    PayloadHandler.Handle(payload, connectionInfo);
                 } 
                 else
                 {
