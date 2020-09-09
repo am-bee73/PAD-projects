@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PG0Zf7HSVOF/YTRUK4t99CMQ+sE+wn8jHBTrA3/4bgdadmnCxPkWTgo1bNSkFXv15MX5I2bcNIEryTSMP+jD4Q==",
+  "dgSpecHash": "XknCkyRxgqOtoO2oLhk7QZ+nOZBl1TScP94JQZZfnMuYKMliicPa97+OMKapd/2tCJKcOXS91pm2unwIxwLeRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aiordan\\Desktop\\PAD-projects\\pad-project1-part1\\Broker\\Broker.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Broker\\Broker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vladi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
