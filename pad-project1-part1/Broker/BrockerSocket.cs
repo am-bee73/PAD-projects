@@ -78,7 +78,7 @@ namespace Broker
                     Array.Copy(connectionInfo.Buffer, payload,buffSize);
 
                     // Handle payload
-                    PayloadHandler.Handle(payload, connectionInfo);
+                    DataHandler.Handle(payload, connectionInfo);
                 } 
             }
             catch(Exception e)
@@ -110,8 +110,11 @@ namespace Broker
                     Console.WriteLine($"{e.Message}");
                     //Logger.Log("Can't accept: " + e.Message);
 
-                    // Remove socket from storage
+                    // Get connection address
                     var address = connectionInfo.Socket.RemoteEndPoint.ToString();
+
+                    // Remove socket from storage
+                    ConnectionsStorage.RemoveConnection(address);
 
                     // Close connection
                     connectionInfo.Socket.Close();
