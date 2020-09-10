@@ -68,19 +68,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aiordan\\.nuget\\packages\\": {}
+    "C:\\Users\\vladi\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aiordan\\Desktop\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
+      "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
       "projectName": "Sender",
-      "projectPath": "C:\\Users\\aiordan\\Desktop\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
-      "packagesPath": "C:\\Users\\aiordan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aiordan\\Desktop\\PAD-projects\\pad-project1-part1\\Sender\\obj\\",
+      "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
+      "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+      "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\aiordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -93,8 +97,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\aiordan\\Desktop\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
-              "projectPath": "C:\\Users\\aiordan\\Desktop\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj"
+            "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
+              "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj"
             }
           }
         }
@@ -128,7 +132,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,8 @@
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.deps.json
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.pdb
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfoInputs.cache
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfo.cs
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.csproj.CoreCompileInputs.cache
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.pdb
