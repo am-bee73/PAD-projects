@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.Text;
 using Utils;
 
@@ -11,10 +10,9 @@ namespace Receiver
         public static void Handle(byte[] payloadBytes)
         {
             var payloadString = Encoding.UTF8.GetString(payloadBytes);
-            var payload = JsonConvert.DeserializeObject<Data
-                >(payloadString);
+            var payload = JsonConvert.DeserializeObject<Data>(payloadString);
 
-            Console.WriteLine(payload.Subject);
+            Console.WriteLine(payload.Body);
         }
     }
 }

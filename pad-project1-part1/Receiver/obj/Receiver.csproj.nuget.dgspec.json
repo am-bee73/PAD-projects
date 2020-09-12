@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj": {}
+    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj": {
+    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj",
+        "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj",
         "projectName": "Receiver",
-        "projectPath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj",
-        "packagesPath": "C:\\Users\\rotar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Receiver\\obj\\",
+        "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj",
+        "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+        "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Receiver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -31,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
-                "projectPath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj"
+              "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
+                "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj"
               }
             }
           }
@@ -70,22 +69,21 @@
         }
       }
     },
-    "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
+    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj",
+        "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj",
         "projectName": "Utils",
-        "projectPath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj",
-        "packagesPath": "C:\\Users\\rotar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Utils\\obj\\",
+        "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj",
+        "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
+        "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\rotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

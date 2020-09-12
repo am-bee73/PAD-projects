@@ -23,9 +23,9 @@ namespace Broker
            else
             {
                 // Handle new message from sender
-                Console.WriteLine(payloadString);
+                Console.WriteLine($"{connectionInfo.Address} -> {payloadString}");
 
-                Data payload = JsonConvert.DeserializeObject<Utils.Data>(payloadString);
+                Data payload = JsonConvert.DeserializeObject<Data>(payloadString);
 
                 // Add message to storage
                 DataStorage.AddNewElement(payload);

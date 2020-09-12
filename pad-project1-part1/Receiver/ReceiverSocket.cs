@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -34,19 +33,18 @@ namespace Receiver
             if (_socket.Connected)
             {
                 Console.WriteLine("Receiver connected to broker. ");
-                Receiver();
+                Subscribe();
                 StartReceive();
             }
-
             else
             {
                 Console.WriteLine("Error: Receiver could not connect to broker.");
             }
         }
 
-        private void Receiver()
+        private void Subscribe()
         {
-            var data = Encoding.UTF8.GetBytes("receive#" + _topic);
+            var data = Encoding.UTF8.GetBytes("subscribe#" + _topic);
             Send(data);
         }
 
@@ -56,8 +54,7 @@ namespace Receiver
             ConnectionInfo connection = new ConnectionInfo();
             connection.Socket = _socket;
 
-            _socket.BeginReceive(connection.Buffer, 0, connection.Buffer.Length, 
-                SocketFlags.None, ReceiveCallback, connection);
+            _socket.BeginReceive(connection.Buffer, 0, connection.Buffer.Length, SocketFlags.None, ReceiveCallback, connection);
         }
 
         private void ReceiveCallback(IAsyncResult asyncResult)
@@ -70,10 +67,9 @@ namespace Receiver
                 if (response == SocketError.Success)
                 {
                     byte[] payloadBytes = new byte[buffsize];
-                    Array.Copy(connectionInfo.Buffer,payloadBytes, payloadBytes.Length);
+                    Array.Copy(connectionInfo.Buffer, payloadBytes, payloadBytes.Length);
 
                     PayloadHandler.Handle(payloadBytes);
-
                 }
            }
             catch(Exception e)
@@ -85,8 +81,7 @@ namespace Receiver
             {
                 try
                 {
-                    connectionInfo.Socket.BeginReceive(connectionInfo.Buffer, 0, connectionInfo.Buffer.Length,
-                        SocketFlags.None, ReceiveCallback, connectionInfo);
+                    connectionInfo.Socket.BeginReceive(connectionInfo.Buffer, 0, connectionInfo.Buffer.Length, SocketFlags.None, ReceiveCallback, connectionInfo);
                 }
                 catch(Exception e)
                 {

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "k9Ye/p0wamG8+8ICoiQsjKJN4NPvkgP9SKHvMU88gpej8CDDzrqsLBOHRxpCdpOefyEPVez20xn11Xpf9aFcbQ==",
+  "dgSpecHash": "BiyEAhQhxag5EhfAIgDaUxza0/YrWBTn+AjRKFy2Sj57XJbQGYyiH4paEpEwxXgMgk1SZqMH77PY0wJ0x6Gpmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj",
+  "projectFilePath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Receiver\\Receiver.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rotar\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\vladi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

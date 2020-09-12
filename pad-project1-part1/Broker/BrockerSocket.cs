@@ -46,6 +46,9 @@ namespace Broker
                 connectionInfo.Socket = this._socket.EndAccept(asyncResult);
                 connectionInfo.Address = connectionInfo.Socket.RemoteEndPoint.ToString();
 
+                // Socket is connected
+                Console.WriteLine($"{connectionInfo.Address} connected to brocker.");
+
                 // Start receiving
                 connectionInfo.Socket.BeginReceive(connectionInfo.Buffer, 0, connectionInfo.Buffer.Length, SocketFlags.None, this.ReceiveCallBack, connectionInfo);
             }
@@ -92,23 +95,11 @@ namespace Broker
                     // Start receiving new data
                     connectionInfo.Socket.BeginReceive(connectionInfo.Buffer, 0, connectionInfo.Buffer.Length, SocketFlags.None, this.ReceiveCallBack, connectionInfo);
                 }
-                catch (SocketException e)
-                {
-                    // Socket is disconnected
-                    Console.WriteLine($"{e.Message}");
-                    //Logger.Log("Can't accept: " + e.Message);
-
-                    // Remove socket from storage
-                    var address = connectionInfo.Socket.RemoteEndPoint.ToString();
-
-                    // Close connection
-                    connectionInfo.Socket.Close();
-                }
                 catch (Exception e)
                 {
                     // Socket is disconnected
-                    Console.WriteLine($"{e.Message}");
-                    //Logger.Log("Can't accept: " + e.Message);
+                    Console.WriteLine($"{connectionInfo.Address} disconnected from brocker.");
+                    Logger.Log("Socket closed: " + e.Message);
 
                     // Get connection address
                     var address = connectionInfo.Socket.RemoteEndPoint.ToString();
