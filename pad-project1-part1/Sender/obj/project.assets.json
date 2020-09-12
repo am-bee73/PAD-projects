@@ -74,11 +74,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
+      "projectUniqueName": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
       "projectName": "Sender",
-      "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
+      "projectPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
       "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-      "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\obj\\",
+      "outputPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part1\\Sender\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -97,8 +97,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
-              "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj"
+            "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj"
             }
           }
         }

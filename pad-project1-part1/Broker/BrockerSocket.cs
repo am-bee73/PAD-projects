@@ -107,8 +107,7 @@ namespace Broker
                 catch (Exception e)
                 {
                     // Socket is disconnected
-                    Console.WriteLine($"{e.Message}");
-                    //Logger.Log("Can't accept: " + e.Message);
+                    Logger.Log("Can't accept: " + e.Message);
 
                     // Get connection address
                     var address = connectionInfo.Socket.RemoteEndPoint.ToString();

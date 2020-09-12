@@ -6,3 +6,11 @@ D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Uti
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.csproj.CoreCompileInputs.cache
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.dll
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.pdb
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.deps.json
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.dll
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.pdb
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfoInputs.cache
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfo.cs
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.csproj.CoreCompileInputs.cache
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.dll
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.pdb
