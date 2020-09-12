@@ -68,24 +68,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vladi\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rotar\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
+      "projectUniqueName": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
       "projectName": "Sender",
-      "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
-      "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-      "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\obj\\",
+      "projectPath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
+      "packagesPath": "C:\\Users\\rotar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Sender\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\vladi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\rotar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -97,8 +98,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
-              "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj"
+            "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Users\\rotar\\PAD-projects\\pad-project1-part1\\Utils\\Utils.csproj"
             }
           }
         }
