@@ -5,17 +5,20 @@ namespace Utils
 {
     public static class Logger
     {
-        private static TextWriter textWriter;
+        private static TextWriter _textWritter;
 
         public static void Log(string logMessage)
         {
-            using(StreamWriter streamWriter = File.AppendText("log.txt"))
+            using (StreamWriter streamWriter = File.AppendText("log.txt"))
             {
-                textWriter.Write("\r\nLog Entry: ");
-                textWriter.Write($"{DateTime.Now.ToLongTimeString()} {DateTime.Now.ToLongDateString()}");
-                textWriter.Write(" :");
-                textWriter.Write($" :{logMessage}");
-                textWriter.Write("-------------------------------");
+                if(_textWritter != null)
+                {
+                    _textWritter.Write("\r\nLog Entry: ");
+                    _textWritter.Write($"{DateTime.Now.ToLongTimeString()} {DateTime.Now.ToLongDateString()}");
+                    _textWritter.Write(" :");
+                    _textWritter.Write($" :{logMessage}");
+                    _textWritter.Write("-------------------------------");
+                }
             }
         }
     }

@@ -1,6 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
@@ -17,21 +15,24 @@ namespace Broker
         {
             while(true)
             {
-                // Get message
-                var data = DataStorage.GetNextElement();
-
-                if (data != null)
+                while(!DataStorage.IsEmpty())
                 {
-                    // If we have a message, get all connections by subject
-                    var connections = ConnectionsStorage.GetConnections(data.Subject);
+                    // Get message
+                    var data = DataStorage.GetNextElement();
 
-                    // Send message to every connection
-                    foreach(var connection in connections)
+                    if(data != null)
                     {
-                        var dataString = JsonConvert.SerializeObject(data);
-                        byte[] dataBytes = Encoding.UTF8.GetBytes(dataString);
+                        // If we have a message, get all connections by subject
+                        var connections = ConnectionsStorage.GetConnections(data.Subject);
 
-                        connection.Socket.Send(dataBytes);
+                        // Send message to every connection
+                        foreach(var connection in connections)
+                        {
+                            var dataString = JsonConvert.SerializeObject(data);
+                            byte[] dataBytes = Encoding.UTF8.GetBytes(dataString);
+
+                            connection.Socket.Send(dataBytes);
+                        }
                     }
                 }
 
