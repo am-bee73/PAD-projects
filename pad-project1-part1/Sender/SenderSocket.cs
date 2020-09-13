@@ -8,40 +8,41 @@ namespace Sender
 {
     class SenderSocket
     {
-        private Socket socket;
+        private Socket _socket;
 
         public bool IsConnected;
 
         public SenderSocket()
         {
-            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         }
 
         public void Connect(string ipAddress, int port)
         {
-            socket.BeginConnect(new IPEndPoint(IPAddress.Parse(ipAddress), port), ConnectedCallback, null);
+            _socket.BeginConnect(new IPEndPoint(IPAddress.Parse(ipAddress), port), ConnectedCallback, null);
             Thread.Sleep(3000);
         }
 
         private void ConnectedCallback(IAsyncResult asyncResult)
         {
-            if (socket.Connected)
+            if (_socket.Connected)
             {
                 Console.WriteLine("Sender connected to Broker.");
             }
             else
             {
                 Console.WriteLine("Error: Sender not connected to Broker.");
+                Logger.Log("Error: Sender not connected to Broker.");
             }
 
-            IsConnected = socket.Connected;
+            IsConnected = _socket.Connected;
         }
 
         public void Send(byte[] data)
         {
             try
             {
-                socket.Send(data);
+                _socket.Send(data);
             }
             catch (ArgumentNullException e)
             {

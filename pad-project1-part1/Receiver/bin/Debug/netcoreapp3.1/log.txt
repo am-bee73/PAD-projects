@@ -1,0 +1,4 @@
+
+Log Entry: 7:02:02 PM Sunday, September 13, 2020 : :
+An existing connection was forcibly closed by the remote host.
+-------------------------------

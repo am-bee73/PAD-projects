@@ -10,22 +10,18 @@ namespace Receiver
     {
         private Socket _socket;
         private string _topic;
-    
 
         public ReceiverSocket(string topic)
         {
             _topic = topic;
             _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
         }
-
 
         public void Connect(string ipAddress, int port)
         {
             _socket.BeginConnect(new IPEndPoint(IPAddress.Parse(ipAddress), port), ConnectCallback, null);
 
             Console.WriteLine("Waiting for a connection");
-
         }
 
         private void ConnectCallback(IAsyncResult asyncResult)
@@ -39,6 +35,7 @@ namespace Receiver
             else
             {
                 Console.WriteLine("Error: Receiver could not connect to broker.");
+                Logger.Log("Error: Receiver could not connect to broker.");
             }
         }
 
@@ -75,7 +72,7 @@ namespace Receiver
             catch(Exception e)
             {
                 Console.WriteLine($"Can't receive data from broker. {e.Message}");
-
+                Logger.Log($"Can't receive data from broker. {e.Message}");
             }
             finally
             {
@@ -86,8 +83,8 @@ namespace Receiver
                 catch(Exception e)
                 {
                     Console.WriteLine($"{e.Message}");
-                    connectionInfo.Socket.Close();
-
+                    Logger.Log(e.Message);
+                    connectionInfo.Socket.Close();              
                 }
             }
         }
@@ -102,8 +99,8 @@ namespace Receiver
             catch (Exception e)
             {
                 Console.WriteLine($"Could not send data: {e.Message}");
+                Logger.Log($"Could not send data: {e.Message}");
             }
         }
-
     }
 }
