@@ -14,3 +14,11 @@ C:\Users\rotar\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Uti
 C:\Users\rotar\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.csproj.CoreCompileInputs.cache
 C:\Users\rotar\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.dll
 C:\Users\rotar\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.pdb
+C:\Users\aiordan\Desktop\PAD-project\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.deps.json
+C:\Users\aiordan\Desktop\PAD-project\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.dll
+C:\Users\aiordan\Desktop\PAD-project\PAD-projects\pad-project1-part1\Utils\bin\Debug\netcoreapp3.1\Utils.pdb
+C:\Users\aiordan\Desktop\PAD-project\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfoInputs.cache
+C:\Users\aiordan\Desktop\PAD-project\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.AssemblyInfo.cs
+C:\Users\aiordan\Desktop\PAD-project\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.csproj.CoreCompileInputs.cache
+C:\Users\aiordan\Desktop\PAD-project\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.dll
+C:\Users\aiordan\Desktop\PAD-project\PAD-projects\pad-project1-part1\Utils\obj\Debug\netcoreapp3.1\Utils.pdb

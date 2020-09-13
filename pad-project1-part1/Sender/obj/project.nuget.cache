@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zbugRJunbOVSKsGtmaGIrHa6wK3XB2MxE7GzQJbXURLczgseb7G6EStPITsqaIv5bXL7jr1FWzvft9MwyvL14Q==",
+  "dgSpecHash": "whXA50rr93FqByEtPdURJSZdRVExTSAzRXxJcDOxLYnQv0eQrxNtKPSUt0qFe7lvbXRlBDGkn0JBBWwgnrjTAg==",
   "success": true,
-  "projectFilePath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
+  "projectFilePath": "C:\\Users\\aiordan\\Desktop\\PAD-project\\PAD-projects\\pad-project1-part1\\Sender\\Sender.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vladi\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\aiordan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

@@ -11,7 +11,7 @@ namespace Receiver
 
             string topic;
 
-            Console.WriteLine("Enter the topic: ");
+            Console.WriteLine("Enter subject: ");
             topic = Console.ReadLine().ToLower();
 
             var receiverSocket = new ReceiverSocket(topic);
