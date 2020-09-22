@@ -1,0 +1,9 @@
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Sender.exe
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.csprojAssemblyReference.cache
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.AssemblyInfoInputs.cache
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.AssemblyInfo.cs
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.csproj.CopyComplete
