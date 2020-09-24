@@ -10,8 +10,9 @@ service Publisher {
 }
 
 message PublishRequest {
-  string topic = 1;
-  string content = 2;
+  string nickname = 1;
+  string topic = 2;
+  string messageBody = 3;
 }
 
 message PublishReply {

@@ -24,15 +24,16 @@ namespace GrpcAgent {
     static PublishReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRQcm90b3MvcHVibGlzaC5wcm90bxIJR3JwY0FnZW50IjAKDlB1Ymxpc2hS",
-            "ZXF1ZXN0Eg0KBXRvcGljGAEgASgJEg8KB2NvbnRlbnQYAiABKAkiIQoMUHVi",
-            "bGlzaFJlcGx5EhEKCWlzU3VjY2VzcxgBIAEoCDJRCglQdWJsaXNoZXISRAoO",
-            "UHVibGlzaE1lc3NhZ2USGS5HcnBjQWdlbnQuUHVibGlzaFJlcXVlc3QaFy5H",
-            "cnBjQWdlbnQuUHVibGlzaFJlcGx5QgyqAglHcnBjQWdlbnRiBnByb3RvMw=="));
+            "ChRQcm90b3MvcHVibGlzaC5wcm90bxIJR3JwY0FnZW50IkYKDlB1Ymxpc2hS",
+            "ZXF1ZXN0EhAKCG5pY2tuYW1lGAEgASgJEg0KBXRvcGljGAIgASgJEhMKC21l",
+            "c3NhZ2VCb2R5GAMgASgJIiEKDFB1Ymxpc2hSZXBseRIRCglpc1N1Y2Nlc3MY",
+            "ASABKAgyUQoJUHVibGlzaGVyEkQKDlB1Ymxpc2hNZXNzYWdlEhkuR3JwY0Fn",
+            "ZW50LlB1Ymxpc2hSZXF1ZXN0GhcuR3JwY0FnZW50LlB1Ymxpc2hSZXBseUIM",
+            "qgIJR3JwY0FnZW50YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcAgent.PublishRequest), global::GrpcAgent.PublishRequest.Parser, new[]{ "Topic", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcAgent.PublishRequest), global::GrpcAgent.PublishRequest.Parser, new[]{ "Nickname", "Topic", "MessageBody" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcAgent.PublishReply), global::GrpcAgent.PublishReply.Parser, new[]{ "IsSuccess" }, null, null, null, null)
           }));
     }
@@ -69,8 +70,9 @@ namespace GrpcAgent {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PublishRequest(PublishRequest other) : this() {
+      nickname_ = other.nickname_;
       topic_ = other.topic_;
-      content_ = other.content_;
+      messageBody_ = other.messageBody_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -79,8 +81,19 @@ namespace GrpcAgent {
       return new PublishRequest(this);
     }
 
+    /// <summary>Field number for the "nickname" field.</summary>
+    public const int NicknameFieldNumber = 1;
+    private string nickname_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Nickname {
+      get { return nickname_; }
+      set {
+        nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "topic" field.</summary>
-    public const int TopicFieldNumber = 1;
+    public const int TopicFieldNumber = 2;
     private string topic_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Topic {
@@ -90,14 +103,14 @@ namespace GrpcAgent {
       }
     }
 
-    /// <summary>Field number for the "content" field.</summary>
-    public const int ContentFieldNumber = 2;
-    private string content_ = "";
+    /// <summary>Field number for the "messageBody" field.</summary>
+    public const int MessageBodyFieldNumber = 3;
+    private string messageBody_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Content {
-      get { return content_; }
+    public string MessageBody {
+      get { return messageBody_; }
       set {
-        content_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        messageBody_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -114,16 +127,18 @@ namespace GrpcAgent {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Nickname != other.Nickname) return false;
       if (Topic != other.Topic) return false;
-      if (Content != other.Content) return false;
+      if (MessageBody != other.MessageBody) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
       if (Topic.Length != 0) hash ^= Topic.GetHashCode();
-      if (Content.Length != 0) hash ^= Content.GetHashCode();
+      if (MessageBody.Length != 0) hash ^= MessageBody.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -140,13 +155,17 @@ namespace GrpcAgent {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Topic.Length != 0) {
+      if (Nickname.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(Nickname);
+      }
+      if (Topic.Length != 0) {
+        output.WriteRawTag(18);
         output.WriteString(Topic);
       }
-      if (Content.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Content);
+      if (MessageBody.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(MessageBody);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -157,13 +176,17 @@ namespace GrpcAgent {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Topic.Length != 0) {
+      if (Nickname.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(Nickname);
+      }
+      if (Topic.Length != 0) {
+        output.WriteRawTag(18);
         output.WriteString(Topic);
       }
-      if (Content.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Content);
+      if (MessageBody.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(MessageBody);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -174,11 +197,14 @@ namespace GrpcAgent {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (Nickname.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+      }
       if (Topic.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Topic);
       }
-      if (Content.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Content);
+      if (MessageBody.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(MessageBody);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -191,11 +217,14 @@ namespace GrpcAgent {
       if (other == null) {
         return;
       }
+      if (other.Nickname.Length != 0) {
+        Nickname = other.Nickname;
+      }
       if (other.Topic.Length != 0) {
         Topic = other.Topic;
       }
-      if (other.Content.Length != 0) {
-        Content = other.Content;
+      if (other.MessageBody.Length != 0) {
+        MessageBody = other.MessageBody;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -212,11 +241,15 @@ namespace GrpcAgent {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            Topic = input.ReadString();
+            Nickname = input.ReadString();
             break;
           }
           case 18: {
-            Content = input.ReadString();
+            Topic = input.ReadString();
+            break;
+          }
+          case 26: {
+            MessageBody = input.ReadString();
             break;
           }
         }
@@ -234,11 +267,15 @@ namespace GrpcAgent {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            Topic = input.ReadString();
+            Nickname = input.ReadString();
             break;
           }
           case 18: {
-            Content = input.ReadString();
+            Topic = input.ReadString();
+            break;
+          }
+          case 26: {
+            MessageBody = input.ReadString();
             break;
           }
         }
