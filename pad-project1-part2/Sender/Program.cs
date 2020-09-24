@@ -36,7 +36,7 @@ namespace Sender
                 {
                     Nickname = nickname,
                     Topic = topic,
-                    Message = message
+                    MessageBody = message
                 };
 
                 try
