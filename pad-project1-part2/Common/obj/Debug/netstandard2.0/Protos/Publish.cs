@@ -24,15 +24,16 @@ namespace GrpcAgent {
     static PublishReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRQcm90b3MvcHVibGlzaC5wcm90bxIJR3JwY0FnZW50IjAKDlB1Ymxpc2hS",
-            "ZXF1ZXN0Eg0KBXRvcGljGAEgASgJEg8KB2NvbnRlbnQYAiABKAkiIQoMUHVi",
-            "bGlzaFJlcGx5EhEKCWlzU3VjY2VzcxgBIAEoCDJRCglQdWJsaXNoZXISRAoO",
-            "UHVibGlzaE1lc3NhZ2USGS5HcnBjQWdlbnQuUHVibGlzaFJlcXVlc3QaFy5H",
-            "cnBjQWdlbnQuUHVibGlzaFJlcGx5QgyqAglHcnBjQWdlbnRiBnByb3RvMw=="));
+            "ChRQcm90b3MvcHVibGlzaC5wcm90bxIJR3JwY0FnZW50IkIKDlB1Ymxpc2hS",
+            "ZXF1ZXN0EhAKCG5pY2tuYW1lGAEgASgJEg0KBXRvcGljGAIgASgJEg8KB21l",
+            "c3NhZ2UYAyABKAkiIQoMUHVibGlzaFJlcGx5EhEKCWlzU3VjY2VzcxgBIAEo",
+            "CDJRCglQdWJsaXNoZXISRAoOUHVibGlzaE1lc3NhZ2USGS5HcnBjQWdlbnQu",
+            "UHVibGlzaFJlcXVlc3QaFy5HcnBjQWdlbnQuUHVibGlzaFJlcGx5QgyqAglH",
+            "cnBjQWdlbnRiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcAgent.PublishRequest), global::GrpcAgent.PublishRequest.Parser, new[]{ "Topic", "Content" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcAgent.PublishRequest), global::GrpcAgent.PublishRequest.Parser, new[]{ "Nickname", "Topic", "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcAgent.PublishReply), global::GrpcAgent.PublishReply.Parser, new[]{ "IsSuccess" }, null, null, null, null)
           }));
     }
@@ -69,8 +70,9 @@ namespace GrpcAgent {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public PublishRequest(PublishRequest other) : this() {
+      nickname_ = other.nickname_;
       topic_ = other.topic_;
-      content_ = other.content_;
+      message_ = other.message_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -79,8 +81,19 @@ namespace GrpcAgent {
       return new PublishRequest(this);
     }
 
+    /// <summary>Field number for the "nickname" field.</summary>
+    public const int NicknameFieldNumber = 1;
+    private string nickname_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Nickname {
+      get { return nickname_; }
+      set {
+        nickname_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "topic" field.</summary>
-    public const int TopicFieldNumber = 1;
+    public const int TopicFieldNumber = 2;
     private string topic_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Topic {
@@ -90,14 +103,14 @@ namespace GrpcAgent {
       }
     }
 
-    /// <summary>Field number for the "content" field.</summary>
-    public const int ContentFieldNumber = 2;
-    private string content_ = "";
+    /// <summary>Field number for the "message" field.</summary>
+    public const int MessageFieldNumber = 3;
+    private string message_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string Content {
-      get { return content_; }
+    public string Message {
+      get { return message_; }
       set {
-        content_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -114,16 +127,18 @@ namespace GrpcAgent {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Nickname != other.Nickname) return false;
       if (Topic != other.Topic) return false;
-      if (Content != other.Content) return false;
+      if (Message != other.Message) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
+      if (Nickname.Length != 0) hash ^= Nickname.GetHashCode();
       if (Topic.Length != 0) hash ^= Topic.GetHashCode();
-      if (Content.Length != 0) hash ^= Content.GetHashCode();
+      if (Message.Length != 0) hash ^= Message.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -140,13 +155,17 @@ namespace GrpcAgent {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (Topic.Length != 0) {
+      if (Nickname.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(Nickname);
+      }
+      if (Topic.Length != 0) {
+        output.WriteRawTag(18);
         output.WriteString(Topic);
       }
-      if (Content.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Content);
+      if (Message.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Message);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -157,13 +176,17 @@ namespace GrpcAgent {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Topic.Length != 0) {
+      if (Nickname.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(Nickname);
+      }
+      if (Topic.Length != 0) {
+        output.WriteRawTag(18);
         output.WriteString(Topic);
       }
-      if (Content.Length != 0) {
-        output.WriteRawTag(18);
-        output.WriteString(Content);
+      if (Message.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Message);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -174,11 +197,14 @@ namespace GrpcAgent {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
+      if (Nickname.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Nickname);
+      }
       if (Topic.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Topic);
       }
-      if (Content.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Content);
+      if (Message.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -191,11 +217,14 @@ namespace GrpcAgent {
       if (other == null) {
         return;
       }
+      if (other.Nickname.Length != 0) {
+        Nickname = other.Nickname;
+      }
       if (other.Topic.Length != 0) {
         Topic = other.Topic;
       }
-      if (other.Content.Length != 0) {
-        Content = other.Content;
+      if (other.Message.Length != 0) {
+        Message = other.Message;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -212,11 +241,15 @@ namespace GrpcAgent {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            Topic = input.ReadString();
+            Nickname = input.ReadString();
             break;
           }
           case 18: {
-            Content = input.ReadString();
+            Topic = input.ReadString();
+            break;
+          }
+          case 26: {
+            Message = input.ReadString();
             break;
           }
         }
@@ -234,11 +267,15 @@ namespace GrpcAgent {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 10: {
-            Topic = input.ReadString();
+            Nickname = input.ReadString();
             break;
           }
           case 18: {
-            Content = input.ReadString();
+            Topic = input.ReadString();
+            break;
+          }
+          case 26: {
+            Message = input.ReadString();
             break;
           }
         }
