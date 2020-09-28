@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sender", "Sender\Sender.csproj", "{A6F76FB2-FC62-4E47-8929-4DA61D08D7EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receiver", "Receiver\Receiver.csproj", "{40D98A5D-BFCB-483E-B28C-C08DEAE550FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C5E94E4-300B-48EA-B8CA-F8B2AFDF302B} = {9C5E94E4-300B-48EA-B8CA-F8B2AFDF302B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

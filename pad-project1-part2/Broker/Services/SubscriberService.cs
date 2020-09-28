@@ -1,6 +1,7 @@
 ﻿using Broker.Models;
 using Grpc.Core;
 using GrpcAgent;
+using System;
 using System.Threading.Tasks;
 
 namespace Broker.Services
@@ -9,9 +10,19 @@ namespace Broker.Services
     {
         public override Task<SubscribeReply> Subscribe(SubscribeRequest request, ServerCallContext context)
         {
-            var conn = new SubscriberConnection(request.Address, request.Nickname, request.Topic);
+            Console.WriteLine($"{request.Nickname} is connecting to topic {request.Topic}");
 
-            // Store Connection
+            try
+            {
+                var conn = new SubscriberConnection(request.Address, request.Nickname, request.Topic);
+
+                // Store Connection
+
+
+            } catch (Exception e)
+            {
+                Console.WriteLine($"{request.Nickname} failed to connect to topic {request.Topic}. /n Reason {e.Message}");
+            }
 
             return Task.FromResult(new SubscribeReply()
             {
