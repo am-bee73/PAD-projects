@@ -1,4 +1,5 @@
 ﻿using Broker.Services;
+using Broker.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -14,6 +15,10 @@ namespace Broker
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddGrpc();
+
+            services.AddSingleton<IMessageStorageService, MessageStorageService>();
+            services.AddSingleton<IConnectionStorageService, ConnectionStorageService>();
+            services.AddHostedService<SenderWorker>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -29,6 +34,7 @@ namespace Broker
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGrpcService<PublisherService>();
+                endpoints.MapGrpcService<SubscriberService>();
 
                 endpoints.MapGet("/", async context =>
                 {

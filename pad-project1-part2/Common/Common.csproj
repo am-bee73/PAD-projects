@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Protos\Notify.proto" />
     <None Remove="Protos\publish.proto" />
+    <None Remove="Protos\subscribe.proto" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Protobuf Include="Protos\Notify.proto" />
     <Protobuf Include="Protos\publish.proto" />
+    <Protobuf Include="Protos\subscribe.proto" />
   </ItemGroup>
 
 </Project>

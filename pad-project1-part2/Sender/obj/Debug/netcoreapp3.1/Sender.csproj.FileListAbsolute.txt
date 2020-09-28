@@ -26,3 +26,31 @@ C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\S
 C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.dll
 C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.pdb
 C:\Users\aiordan\Documents\#UNIVER\anul IV\PAD\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.genruntimeconfig.cache
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Sender.exe
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Sender.deps.json
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Sender.runtimeconfig.json
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Sender.runtimeconfig.dev.json
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Sender.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Sender.pdb
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Grpc.Core.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Grpc.Core.Api.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Grpc.Net.Client.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Grpc.Net.Common.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\runtimes\linux\native\libgrpc_csharp_ext.x64.so
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\runtimes\linux\native\libgrpc_csharp_ext.x86.so
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\runtimes\osx\native\libgrpc_csharp_ext.x64.dylib
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\runtimes\osx\native\libgrpc_csharp_ext.x86.dylib
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x64.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\runtimes\win\native\grpc_csharp_ext.x86.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Common.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\bin\Debug\netcoreapp3.1\Common.pdb
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.csprojAssemblyReference.cache
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.AssemblyInfoInputs.cache
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.AssemblyInfo.cs
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.csproj.CoreCompileInputs.cache
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.csproj.CopyComplete
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.dll
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.pdb
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Sender\obj\Debug\netcoreapp3.1\Sender.genruntimeconfig.cache
