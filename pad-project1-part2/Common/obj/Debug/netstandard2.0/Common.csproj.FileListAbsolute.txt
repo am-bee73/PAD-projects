@@ -14,3 +14,4 @@ D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\C
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.dll
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.pdb
+D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
