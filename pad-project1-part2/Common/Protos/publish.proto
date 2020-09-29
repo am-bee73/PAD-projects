@@ -4,17 +4,17 @@ option csharp_namespace = "GrpcAgent";
 
 package GrpcAgent;
 
-service Publisher {
+service Notifier {
  
-  rpc PublishMessage (PublishRequest) returns (PublishReply);
+  rpc Notify (NotifyRequest) returns (NotifyReply);
 }
 
-message PublishRequest {
+message NotifyRequest {
   string nickname = 1;
   string topic = 2;
   string messageBody = 3;
 }
 
-message PublishReply {
+message NotifyReply {
   bool isSuccess = 1;
 }

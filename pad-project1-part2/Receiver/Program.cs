@@ -5,6 +5,8 @@ using Grpc.Net.Client;
 using GrpcAgent;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting.Server.Features;
+using Microsoft.Extensions.Hosting;
 
 namespace Receiver
 {
@@ -43,10 +45,21 @@ namespace Receiver
             var topic = Console.ReadLine().ToLower();
 
             // Get Address
+            var address = host.ServerFeatures.Get<IServerAddressesFeature>().Addresses.First();
+            Console.WriteLine($"Subscriber listening at: {address}");
 
             var request = new SubscribeRequest() { Nickname = nickname, Topic = topic, Address = "" };
 
             // Subscribe
+            try
+                {
+            var reply = client.Subscribe(request);
+                Console.WriteLine($"Subscribed reply: { reply.IsSuccess}");
+            }
+            catch
+            {
+                Console.WriteLine($"Error subscribing: {else.Message}");
+            }
         }
     }
 }
