@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj": {}
+    "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj": {}
   },
   "projects": {
-    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj": {
+    "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-        "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\obj\\",
+        "outputPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -76,14 +76,14 @@
         }
       }
     },
-    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj": {
+    "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj",
+        "projectUniqueName": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj",
         "projectName": "Receiver",
-        "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj",
+        "projectPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj",
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-        "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Receiver\\obj\\",
+        "outputPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Receiver\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -102,8 +102,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj": {
-                "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj"
+              "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj"
               }
             }
           }

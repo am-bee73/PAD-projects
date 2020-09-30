@@ -1,5 +1,6 @@
 ﻿using Broker.Services;
 using Broker.Services.Interfaces;
+using GrpcAgent;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;

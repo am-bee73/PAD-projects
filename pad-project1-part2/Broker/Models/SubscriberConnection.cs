@@ -1,4 +1,6 @@
-﻿using Grpc.Net.Client;
+﻿using Common;
+using Grpc.Net.Client;
+using System.Net.Http;
 
 namespace Broker.Models
 {
@@ -11,15 +13,20 @@ namespace Broker.Models
 
         public string Topic { get; }
 
-        public GrpcChannel Channel { get; }
+        public GrpcChannel Channel { get; set; }
 
         // MARK: Initializers
         public SubscriberConnection(string address, string nickname, string topic)
         {
+            var httpHandler = new HttpClientHandler();
+            httpHandler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+
+            var httpClient = new HttpClient(httpHandler);
+
             this.Address = address;
             this.Nickname = nickname;
             this.Topic = topic;
-            this.Channel = GrpcChannel.ForAddress(address);
+            this.Channel = GrpcChannel.ForAddress(EndpointConstants.BrokerAddress, new GrpcChannelOptions { HttpClient = httpClient });
         }
     }
 }

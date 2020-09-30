@@ -26,6 +26,7 @@
         "dependencies": {
           "Common": "1.0.0",
           "Grpc.AspNetCore": "2.27.0",
+          "Receiver": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -540,6 +541,18 @@
         },
         "compile": {
           "Common.dll": {}
+        }
+      },
+      "Receiver/1.0.0": {
+        "dependencies": {
+          "Common": "1.0.0",
+          "Grpc.AspNetCore": "2.27.0"
+        },
+        "runtime": {
+          "Receiver.dll": {}
+        },
+        "compile": {
+          "Receiver.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2404,6 +2417,11 @@
       "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
     },
     "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Receiver/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

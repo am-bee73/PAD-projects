@@ -17,8 +17,7 @@ namespace Sender
             httpHandler.ServerCertificateCustomValidationCallback =
                 HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
 
-            var channel = GrpcChannel.ForAddress(EndpointConstants.BrokerAddress,
-                new GrpcChannelOptions { HttpHandler = httpHandler});
+            var channel = GrpcChannel.ForAddress(EndpointConstants.BrokerAddress, new GrpcChannelOptions { HttpHandler = httpHandler});
             var client = new Publisher.PublisherClient(channel);
 
             while (true)
