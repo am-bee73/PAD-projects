@@ -24,9 +24,9 @@ namespace Broker.Services
                 var conn = new SubscriberConnection(request.Address, request.Nickname, request.Topic);
 
                 // Store Connection
-                _connectionStorage.Add(connection);
+                _connectionStorage.AddConnection(conn);
                
-                Console.WriteLine($"New client subscribed: {request.Address} {request.Topic}");
+                Console.WriteLine($"{request.Nickname} subscribed for topic {request.Topic}");
 
             } 
             catch (Exception e)

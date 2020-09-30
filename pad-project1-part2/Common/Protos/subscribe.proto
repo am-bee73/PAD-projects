@@ -5,7 +5,6 @@ option csharp_namespace = "GrpcAgent";
 package GrpcAgent;
 
 service Subscriber {
- 
   rpc Subscribe (SubscribeRequest) returns (SubscribeReply);
 }
 

@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Receiver\Receiver.csproj" />
   </ItemGroup>
 
 </Project>

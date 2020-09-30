@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lzwVuk17If761bF6VBRLxhx07Rr3TEV263WgvHsBD7KRflBBiJqE5q0+ii2XIKUJbxbr+15J+8fffeEz96JzyA==",
+  "dgSpecHash": "gBo9gNhn7SFj7edJ4DR3UTvssvvpQEiKpzWdUf7JpCozC2YrEPGzFFgYuDRD+6qD80VOjaiB/LyApszUeSpFPw==",
   "success": true,
-  "projectFilePath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Broker\\Broker.csproj",
+  "projectFilePath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Broker\\Broker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vladi\\.nuget\\packages\\google.protobuf\\3.13.0\\google.protobuf.3.13.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\grpc\\2.32.0\\grpc.2.32.0.nupkg.sha512",

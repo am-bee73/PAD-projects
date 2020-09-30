@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Sender\\Sender.csproj": {}
+    "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Sender\\Sender.csproj": {}
   },
   "projects": {
-    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj": {
+    "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-        "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\obj\\",
+        "outputPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -76,14 +76,14 @@
         }
       }
     },
-    "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Sender\\Sender.csproj": {
+    "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Sender\\Sender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Sender\\Sender.csproj",
+        "projectUniqueName": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Sender\\Sender.csproj",
         "projectName": "Sender",
-        "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Sender\\Sender.csproj",
+        "projectPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Sender\\Sender.csproj",
         "packagesPath": "C:\\Users\\vladi\\.nuget\\packages\\",
-        "outputPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Sender\\obj\\",
+        "outputPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Sender\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -102,8 +102,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj": {
-                "projectPath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj"
+              "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Common\\Common.csproj"
               }
             }
           }
@@ -124,6 +124,10 @@
             "Grpc.Net.Client": {
               "target": "Package",
               "version": "[2.31.0, )"
+            },
+            "System.Security.Permissions": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [

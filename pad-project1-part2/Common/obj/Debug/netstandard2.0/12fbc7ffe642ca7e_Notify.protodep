@@ -1,2 +1,2 @@
 obj\Debug\netstandard2.0\Protos/Notify.cs \
-obj\Debug\netstandard2.0\Protos/NotifyGrpc.cs: Protos/Notify.proto
+obj\Debug\netstandard2.0\Protos/NotifyGrpc.cs: Protos/notify.proto

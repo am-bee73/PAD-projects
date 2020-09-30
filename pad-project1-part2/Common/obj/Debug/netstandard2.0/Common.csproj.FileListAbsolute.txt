@@ -14,3 +14,12 @@ D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\C
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.dll
 D:\UTM\SEM-VII\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.pdb
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.dll
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.pdb
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\bin\Debug\netstandard2.0\Common.dll
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\Users\vladi\Desktop\PAD-projects\pad-project1-part2\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GLQzEjM82Sms+wFs6gRZrEKv1Cev30m0mPSK43fe+pYmSwBZPQKhqAJigogFI63oNHZPnDujjw2pISkEBelNVA==",
+  "dgSpecHash": "p064N73BzYzyszFEzwH+NJv/omrB/5NaJJnqOKmKSx9k6LsHhmSnmBvTil/zfcLtHaFOAUI/5I21u7N6x9Tzog==",
   "success": true,
-  "projectFilePath": "D:\\UTM\\SEM-VII\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj",
+  "projectFilePath": "C:\\Users\\vladi\\Desktop\\PAD-projects\\pad-project1-part2\\Receiver\\Receiver.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vladi\\.nuget\\packages\\google.protobuf\\3.13.0\\google.protobuf.3.13.0.nupkg.sha512",
     "C:\\Users\\vladi\\.nuget\\packages\\grpc\\2.32.0\\grpc.2.32.0.nupkg.sha512",
