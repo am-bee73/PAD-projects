@@ -70,7 +70,7 @@ public class RequestHandler implements Runnable {
 
         //prepare http:// if necessary to create correct url
         if (!urlString.substring(0, 4).equals("http")) {
-            String temp = "http://";
+            String temp = "https:/";
             urlString = temp + urlString;
         }
 
