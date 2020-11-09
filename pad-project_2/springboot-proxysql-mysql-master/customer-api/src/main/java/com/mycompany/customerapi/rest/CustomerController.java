@@ -7,6 +7,9 @@ import com.mycompany.customerapi.rest.dto.CustomerDto;
 import com.mycompany.customerapi.rest.dto.UpdateCustomerRequest;
 import com.mycompany.customerapi.service.CustomerService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,6 +33,7 @@ public class CustomerController {
     private final CustomerService customerService;
     private final CustomerMapper customerMapper;
 
+    @Cacheable(value = "customers")
     @GetMapping
     public List<CustomerDto> getAllCustomers() {
         return customerService.getAllCustomers()
@@ -38,12 +42,14 @@ public class CustomerController {
                 .collect(Collectors.toList());
     }
 
+    @Cacheable(value = "customers", key = "#id")
     @GetMapping("/{id}")
     public CustomerDto getCustomerById(@PathVariable Long id) {
         Customer customer = customerService.validateAndGetCustomer(id);
         return customerMapper.toCustomerDto(customer);
     }
 
+    @CachePut(value = "customers", key = "#createCustomerRequest")
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public CustomerDto createCustomer(@Valid @RequestBody CreateCustomerRequest createCustomerRequest) {
@@ -52,6 +58,7 @@ public class CustomerController {
         return customerMapper.toCustomerDto(customer);
     }
 
+    @CachePut(value = "customers", key = "#id")
     @PutMapping("/{id}")
     public CustomerDto updateCustomer(@PathVariable Long id, @Valid @RequestBody UpdateCustomerRequest updateCustomerRequest) {
         Customer customer = customerService.validateAndGetCustomer(id);
@@ -60,6 +67,7 @@ public class CustomerController {
         return customerMapper.toCustomerDto(customer);
     }
 
+    @CacheEvict(value = "customers", key = "#id")
     @DeleteMapping("/{id}")
     public CustomerDto deleteCustomer(@PathVariable Long id) {
         Customer customer = customerService.validateAndGetCustomer(id);
