@@ -69,11 +69,16 @@ public class RequestHandler implements Runnable {
         urlString = urlString.substring(0, urlString.indexOf(' '));
 
         //prepare http:// if necessary to create correct url
-        if (!urlString.substring(0, 4).equals("http")) {
-            String temp = "https:/";
-            urlString = temp + urlString;
-        }
+//        if (!urlString.substring(0, 4).equals("http")) {
+//            String temp = "http:/";
+//            urlString = temp + urlString;
+//        }
 
+        if (urlString.charAt(0) == '/') {
+            urlString = urlString.substring(1);
+            System.out.println(urlString);
+        }
+        
         //check if site is blocked
         if (Proxy.isBlocked(urlString)) {
             System.out.println(String.format("Blocked site request %s", urlString));
